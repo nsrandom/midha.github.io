@@ -1,0 +1,15 @@
+.metatext {
+  font-family: 'Lobster', cursive;
+  font-size: 600%;
+
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 7;
+
+  text-align: center;
+  text-decoration-color: #423423;
+  color: #999;
+
+  z-index: 1;
+}

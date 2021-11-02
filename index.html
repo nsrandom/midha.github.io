@@ -19,24 +19,26 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/metaverse.css">
+  <link rel="stylesheet" href="css/metatext.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-<!--   <div class="myGallery">
-    <img src="img/metaverse/avatars.png"/>
-    <img src="img/metaverse/brain.jpg"/>
-    <img src="img/metaverse/green-vr.jpg"/>
-    <img src="img/metaverse/neon-avatars.jpg"/>
-    <img src="img/metaverse/neon-man.jpg"/>
-    <img src="img/metaverse/snow-crash-courier.jpg"/>
-    <img src="img/metaverse/snow-crash-cover.jpg"/>
-    <img src="img/metaverse/vr.png"/>
-  </div> -->
-
   <div class="gallery">
+
+    <p class="metatext">
+    This is not the
+    </p>
+    <p id="not-metaverse" class="metatext">
+    <br/>METAVERSE.
+    </p>
+
     <figure class="gallery__item gallery__item--1">
       <img src="img/metaverse/avatars.png" class="gallery__img">
     </figure>
@@ -55,18 +57,30 @@
     <figure class="gallery__item gallery__item--6">
       <img src="img/metaverse/snow-crash-courier.jpg" class="gallery__img">
     </figure>
+
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/javascript">
+    function flashtext(ele,col) {
+      var tmpColCheck = document.getElementById( ele ).style.color;
+
+      if (tmpColCheck === 'silver') {
+        document.getElementById( ele ).style.color = col;
+      } else {
+        document.getElementById( ele ).style.color = 'silver';
+      }
+    }
+
+    setInterval(function() {
+      flashtext('not-metaverse', 'red');
+    }, 400 ); //set an interval timer up to repeat the function
+  </script>
 </body>
 
 </html>
