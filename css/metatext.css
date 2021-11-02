@@ -8,8 +8,31 @@
   grid-row-end: 7;
 
   text-align: center;
-  text-decoration-color: #423423;
-  color: #999;
+  color: grey;
 
   z-index: 1;
+}
+
+#midhatext {
+  color: hotpink;
+}
+
+a:link {
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+a:active {
+  text-decoration: underline;
+  color: red;
 }
